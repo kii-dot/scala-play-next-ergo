@@ -1,11 +1,31 @@
 /* eslint-disable no-undef */
 function getSummary(cb) {
-  return fetch("/api/summary", {
+  return fetch("/ping", {
     accept: "application/json",
   })
     .then(checkStatus)
     .then(parseJSON)
     .then(cb);
+}
+
+function getFeed(walletAddress, cb) {
+  console.log(walletAddress)
+  return fetch(`/feed/my/${walletAddress}`, {
+    accept: "application/json"
+  })
+    .then(checkStatus)
+    .then(parseJSON)
+    .then(cb)
+}
+
+function getFollowing(walletAddres, cb) {
+  console.log(walletAddress)
+  return fetch(`/profile/following/${walletAddress}`, {
+    accept: "application/json"
+  })
+    .then(checkStatus)
+    .then(parseJSON)
+    .then(cb)
 }
 
 function checkStatus(response) {
@@ -23,5 +43,5 @@ function parseJSON(response) {
   return response.json();
 }
 
-const Client = { getSummary };
+const Client = { getSummary, getFeed, getFollowing };
 export default Client;
