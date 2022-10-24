@@ -1307,17 +1307,18 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.3.0.tgz#ea89004119dc42db2e1dba0f97d553f7372f6fcb"
   integrity sha512-AHPmaAx+RYfZz0eYu6Gviiagpmiyw98ySSlQvCUhVGDRtDFe4DBS0x1bSjdF3gqUDYOczB+yYvBTtEylYSdRhg==
 
-"@ergolabs/ergo-sdk@^0.1.14":
-  version "0.1.28"
-  resolved "https://registry.yarnpkg.com/@ergolabs/ergo-sdk/-/ergo-sdk-0.1.28.tgz#715d58ba9d65af413ff963f3c36b9965b28fa92c"
-  integrity sha512-EYBuf7WP+RTbIHWJJd+XjpexRSDqntSMnhtex3BCc8knezoZqzY7Wj8a+KJC3xOL1PdfJjXn6SMLxpFQirOzZw==
+"@ergolabs/ergo-sdk@^0.4.5":
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/@ergolabs/ergo-sdk/-/ergo-sdk-0.4.5.tgz#6a36c82a07c1a590db11c70f1ef79661c92fb1d7"
+  integrity sha512-Z8EEMux1yKsvE9F4YERL1isjOCp9FeZnwPAIyyRP5g+HKA5XW4qosFo0Fwcsd8743WIQDzYMkl6x4xWK3Bl+7Q==
   dependencies:
     axios "^0.21.1"
     blakejs "^1.1.0"
     bs58 "^4.0.1"
     crypto-js "^4.0.0"
-    ergo-lib-wasm-browser "0.14.0"
-    ergo-lib-wasm-nodejs "0.14.0"
+    ergo-lib-wasm-browser "^0.20.1"
+    ergo-lib-wasm-nodejs "^0.20.1"
+    esm-wallaby "^3.2.25"
     json-bigint "^1.0.0"
     mathjs "^9.4.4"
     ramda "0.27.1"
@@ -2222,6 +2223,11 @@
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
+
+"@types/parse-unit@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@types/parse-unit/-/parse-unit-1.0.1.tgz#1c1ffda43d17accccad048012f9c1764b4042bba"
+  integrity sha512-p6QazF9lsJKxD+l/jcPQSGthgFbtKQuNSOH48zdPCnItg2qrvKGwaDd5KRmdsC/qmJ20zGafQ/VzNtIfi7AfiA==
 
 "@types/prettier@^2.1.5":
   version "2.7.1"
@@ -4101,15 +4107,15 @@ entities@^2.0.0:
   resolved "https://registry.yarnpkg.com/entities/-/entities-2.2.0.tgz#098dc90ebb83d8dffa089d55256b351d34c4da55"
   integrity sha512-p92if5Nz619I0w+akJrLZH0MX0Pb5DX39XOwQTtXSdQQOaYH03S1uIQp4mhOZtAXrxq4ViO67YTiLBo2638o9A==
 
-ergo-lib-wasm-browser@0.14.0:
-  version "0.14.0"
-  resolved "https://registry.yarnpkg.com/ergo-lib-wasm-browser/-/ergo-lib-wasm-browser-0.14.0.tgz#0fe0758ba8591f28a38776bef1f8c3837b188361"
-  integrity sha512-hJILi6lhz224nDEj0ajJDteU4D08npo3FoFoheOJBRCI6c/ZifuD4dso9uOfQyEWdvhPfRPGcILrR74W9xMaTw==
+ergo-lib-wasm-browser@^0.20.1:
+  version "0.20.1"
+  resolved "https://registry.yarnpkg.com/ergo-lib-wasm-browser/-/ergo-lib-wasm-browser-0.20.1.tgz#68097ba6ddf464447866066c9c3f3d960651af7e"
+  integrity sha512-g324oXm9kdNphqVuiIzb1lWpawASp7zihcqc8wmr+/xwB8RBSEV+IBwAu4RYMRHNwlwffsPOtKvk+lRpxUFVxQ==
 
-ergo-lib-wasm-nodejs@0.14.0:
-  version "0.14.0"
-  resolved "https://registry.yarnpkg.com/ergo-lib-wasm-nodejs/-/ergo-lib-wasm-nodejs-0.14.0.tgz#f7cedcab2f9cf586f82abb81c18e52377d5781ae"
-  integrity sha512-vspQ5NOxvsbVewZoiiu0D8fs8sJQR5BDTbUAWnZW5At+DGdvq7dYgQTSAR86zJB1BDi0H6/fEckyA5hieuXoBA==
+ergo-lib-wasm-nodejs@^0.20.1:
+  version "0.20.1"
+  resolved "https://registry.yarnpkg.com/ergo-lib-wasm-nodejs/-/ergo-lib-wasm-nodejs-0.20.1.tgz#390802910290c37e83c5316028751ea5e4b41e79"
+  integrity sha512-2jGQ21HWQdsA9hOXr2DJS7iq32uIQHL45hxfNJ1VnYRUbVkQRpBWB7PRFKZvlIlZT6dIifcg8IacF6hqBOfB2g==
 
 error-ex@^1.3.1:
   version "1.3.2"
@@ -4457,6 +4463,11 @@ eslint@8.26.0, eslint@^8.3.0:
     strip-ansi "^6.0.1"
     strip-json-comments "^3.1.0"
     text-table "^0.2.0"
+
+esm-wallaby@^3.2.25:
+  version "3.2.26"
+  resolved "https://registry.yarnpkg.com/esm-wallaby/-/esm-wallaby-3.2.26.tgz#b9048a6cb1dcda6ef17f2e051b3a99cbb75659e4"
+  integrity sha512-DtbO0pdJj7kv/abkQ1BjIpk/Rm6vy9ueGcsXuQT7jH6qw6RQby/i/qeVyIcf2pbpAT5UW8PN+dL2YZakTw+URA==
 
 espree@^9.4.0:
   version "9.4.0"
@@ -6871,6 +6882,11 @@ parse-json@^5.0.0, parse-json@^5.2.0:
     json-parse-even-better-errors "^2.3.0"
     lines-and-columns "^1.1.6"
 
+parse-unit@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/parse-unit/-/parse-unit-1.0.1.tgz#7e1bb6d5bef3874c28e392526a2541170291eecf"
+  integrity sha512-hrqldJHokR3Qj88EIlV/kAyAi/G5R2+R56TBANxNMy0uPlYcttx0jnMW6Yx5KsKPSbC3KddM/7qQm3+0wEXKxg==
+
 parse5@6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/parse5/-/parse5-6.0.1.tgz#e1a1c085c569b3dc08321184f19a39cc27f7c30b"
@@ -8664,7 +8680,15 @@ symbol-tree@^3.2.4:
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.4.tgz#430637d248ba77e078883951fb9aa0eed7c63fa2"
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
 
-tailwindcss@^3.0.2:
+tailwindcss-font-inter@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/tailwindcss-font-inter/-/tailwindcss-font-inter-3.0.1.tgz#1a53688c42ff56eb2517fd11a9edb65fe71f0a89"
+  integrity sha512-wN0uIB+OzQk8ItqFoEl/eQM4H05AgNbqlI++IDb5B4Fqz8imee2dJAy85jyARwTUUouMwdwdBjx7yxXf22CyCg==
+  dependencies:
+    "@types/parse-unit" "^1.0.1"
+    parse-unit "^1.0.1"
+
+tailwindcss@^3.0.2, tailwindcss@^3.0.24:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.2.1.tgz#1bd828fff3172489962357f8d531c184080a6786"
   integrity sha512-Uw+GVSxp5CM48krnjHObqoOwlCt5Qo6nw1jlCRwfGy68dSYb/LwS9ZFidYGRiM+w6rMawkZiu1mEMAsHYAfoLg==
