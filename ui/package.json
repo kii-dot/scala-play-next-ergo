@@ -15,7 +15,7 @@
     "react-dom": "18.2.0",
     "@coinbarn/ergo-ts": "0.3.0",
     "@emotion/react": "^11.10.4",
-    "@emotion/styled": "^11.10.4",
+    "@emotion/styled": "^11.10.5",
     "@ergolabs/ergo-sdk": "^0.4.5",
     "@mui/material": "^5.10.12",
     "axios": "^1.1.3",
