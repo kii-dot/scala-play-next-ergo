@@ -37,7 +37,7 @@
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
     "wasm-loader": "^1.3.0",
-    "next-transpile-modules": "^9.0.0",
+    "next-transpile-modules": "^10.0.0",
     "tailwindcss-font-inter": "^3.0.1"
   },
   "proxy": "http://localhost:9000",
